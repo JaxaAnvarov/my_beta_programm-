@@ -12,7 +12,7 @@ class SearchPage extends StatelessWidget {
         child: Text(
           "Search Page",
           style: TextStyle(
-            color: kPrimaryBlackColor,
+            color: ProjectColors().kPrimaryBlackColor,
             fontSize: getProportionateScreenWidth(30.0),
           ),
         ),

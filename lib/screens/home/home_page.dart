@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         title: Text(
           'Home',
           style: TextStyle(
-            color: kPrimaryBlackColor,
+            color: ProjectColors().kPrimaryBlackColor,
             fontSize: getProportionateScreenWidth(18.0),
             fontWeight: FontWeight.w700,
             fontFamily: 'WorkSans',
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
         child: Text(
           'Home Page',
           style: TextStyle(
-            color: kPrimaryBlackColor,
+            color: ProjectColors().kPrimaryBlackColor,
             fontSize: getProportionateScreenWidth(30.0),
           ),
         ),

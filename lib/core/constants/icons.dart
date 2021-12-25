@@ -3,7 +3,7 @@ import 'package:my_beta_programm/core/constants/export.dart';
 // * Aktiv Home Iconi Uchun
 SvgPicture home1 = SvgPicture.asset(
   'assets/icons/home1.svg',
-  color: kPrimaryRedColor,
+  color: ProjectColors().kPrimaryRedColor,
   width: getProportionateScreenWidth(20.0),
   height: getProportionateScreenWidth(20.0),
 );
@@ -53,7 +53,7 @@ SvgPicture person2 = SvgPicture.asset(
 // * Passiv Profil iconi uchun
 SvgPicture person1 = SvgPicture.asset(
   'assets/icons/person.svg',
-  color: kPrimaryRedColor,
+  color: ProjectColors().kPrimaryRedColor,
   height: getProportionateScreenHeight(20.0),
   width: getProportionateScreenWidth(20.0),
 );

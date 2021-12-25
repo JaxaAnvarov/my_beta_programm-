@@ -12,7 +12,7 @@ class PersonPage extends StatelessWidget {
         child: Text(
           'Person Page',
           style: TextStyle(
-            color: kPrimaryBlackColor,
+            color: ProjectColors().kPrimaryBlackColor,
             fontSize: getProportionateScreenWidth(30.0),
           ),
         ),

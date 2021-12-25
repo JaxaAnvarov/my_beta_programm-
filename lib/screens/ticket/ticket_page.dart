@@ -12,7 +12,7 @@ class TickedPage extends StatelessWidget {
         child: Text(
           "Ticked Page",
           style: TextStyle(
-            color: kPrimaryBlackColor,
+            color: ProjectColors().kPrimaryBlackColor,
             fontSize: getProportionateScreenWidth(30.0),
           ),
         ),
