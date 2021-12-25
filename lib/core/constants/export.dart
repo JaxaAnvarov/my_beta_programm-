@@ -12,11 +12,11 @@ export 'package:my_beta_programm/core/widgets/bottom_nav_bar.dart';
 export 'package:my_beta_programm/screens/main_page.dart';
 export 'package:my_beta_programm/core/components/decoration.dart';
 export 'package:my_beta_programm/core/widgets/container/container.dart';
-export 'package:my_beta_programm/core/widgets/sliver_appBar.dart';
+export 'package:my_beta_programm/core/widgets/sliver/sliver_appBar.dart';
 export 'package:my_beta_programm/core/widgets/container/constants_container.dart';
 export 'package:my_beta_programm/core/components/constants_text.dart';
 export 'package:my_beta_programm/core/constants/paddigs.dart';
-export 'package:my_beta_programm/core/widgets/sliver_list.dart';
+export 'package:my_beta_programm/core/widgets/sliver/sliver_list.dart';
 
 
 

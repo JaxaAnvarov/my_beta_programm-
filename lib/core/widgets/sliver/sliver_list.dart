@@ -31,7 +31,7 @@ class MySliverList extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: getProportionateScreenHeight(260.0),
+            height: getProportionateScreenHeight(280.0),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 6,
@@ -50,6 +50,50 @@ class MySliverList extends StatelessWidget {
                   ),
                 );
               },
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(
+              horizontal: kPrimaryHorizontalPadding,
+              vertical: kPrimaryVPadding,
+            ),
+            child: ConstantsText(
+              text: 'Collection',
+              color: ProjectColors().kPrimaryTextColor,
+              size: getProportionateScreenWidth(28.0),
+            ),
+          ),
+          SizedBox(
+            height: getProportionateScreenHeight(180.0),
+            child: ListView.builder(
+              itemCount: 6,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (
+                BuildContext _,
+                int __,
+              ) {
+                return Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: kPrimaryHorizontalPadding,
+                    vertical: kPrimaryVerticalPadding,
+                  ),
+                  child: AwesomeContainer(
+                    height: getProportionateScreenHeight(165.0),
+                    width: getProportionateScreenWidth(320.0),
+                  ),
+                );
+              },
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(
+              horizontal: kPrimaryHorizontalPadding,
+              vertical: kPrimaryVPadding,
+            ),
+            child: ConstantsText(
+              text: 'Discover',
+              color: ProjectColors().kPrimaryTextColor,
+              size: getProportionateScreenWidth(28.0),
             ),
           ),
         ],

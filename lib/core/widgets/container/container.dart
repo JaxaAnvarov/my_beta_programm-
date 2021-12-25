@@ -20,7 +20,7 @@ class AwesomeContainer extends StatelessWidget {
       child: const Information(),
       decoration: CDecoration().boxDecoration(
         imageUrl: 'assets/images/ima.png',
-        radius : getProportionateScreenWidth(
+        radius: getProportionateScreenWidth(
           20.0,
         ),
       ),
