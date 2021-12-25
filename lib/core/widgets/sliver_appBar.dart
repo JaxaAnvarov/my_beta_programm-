@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
 
-class MyAppBar extends StatelessWidget with PreferredSizeWidget {
+class MySliverAppBar extends StatelessWidget with PreferredSizeWidget {
   String? title;
   Color? color;
   double fontSize;
 
-  MyAppBar({
+  MySliverAppBar({
     Key? key,
     required this.title,
     required this.color,
@@ -15,12 +15,14 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      backgroundColor: color,
+    SizeConfig().init(context);
+    return SliverAppBar(
+      backgroundColor: ProjectColors().kPrimaryWhiteColor,
+      elevation: 50.0,
       title: Text(
         title!,
         style: TextStyle(
-          color: ProjectColors().kPrimaryTextColor,
+          color: color,
           fontFamily: "WorkSans",
           fontSize: fontSize,
           fontWeight: FontWeight.w700,
@@ -32,9 +34,9 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
 
   @override
   Size get preferredSize {
-    return const Size(
+    return Size(
       double.infinity, // ! width,
-      60.0, // ! height
+      getProportionateScreenHeight(61.0), // ! height
     );
   }
 }
