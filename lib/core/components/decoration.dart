@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 
 class CDecoration extends Object {
-  BoxDecoration boxDecoration(Color color, double radius) {
+  BoxDecoration boxDecoration({
+    double? radius,
+    String? imageUrl,
+  }) {
     return BoxDecoration(
-      color: color,
+      image: DecorationImage(
+        image: AssetImage(
+          imageUrl!,
+        ),
+        fit: BoxFit.cover,
+      ),
       borderRadius: BorderRadius.circular(
-        radius,
+        radius!,
       ),
     );
   }

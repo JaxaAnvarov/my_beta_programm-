@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
 
-
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -9,24 +8,43 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: ProjectColors().kPrimaryWhiteColor,
-        title: Text(
-          'Home',
-          style: TextStyle(
-            color: ProjectColors().kPrimaryBlackColor,
-            fontSize: getProportionateScreenWidth(18.0),
-            fontWeight: FontWeight.w700,
-            fontFamily: 'WorkSans',
-          ),
-        ),
-        centerTitle: true,
+      appBar: MyAppBar(
+        color: ProjectColors().kPrimaryWhiteColor,
+        title: 'Home',
+        fontSize: getProportionateScreenWidth(18.0),
       ),
-      body: Center(
-        child: AwesomeContainer(
-          height: getProportionateScreenHeight(161.0),
-          width: getProportionateScreenWidth(319.0),
-        ),
+      body: CustomScrollView(
+        slivers: [
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'For you',
+                      style: TextStyle(
+                        color: ProjectColors().kPrimaryTextColor,
+                        fontWeight: FontWeight.w700,
+                        fontSize: getProportionateScreenWidth(28.0),
+                      ),
+                    ),
+                    Container(
+                      height: getProportionateScreenWidth(32.0),
+                      width: getProportionateScreenWidth(32.0),
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                      ),
+                      child: SvgPicture.asset(
+                        'assets/images/filter.svg',
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

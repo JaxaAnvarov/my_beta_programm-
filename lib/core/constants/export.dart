@@ -12,6 +12,8 @@ export 'package:my_beta_programm/core/widgets/bottom_nav_bar.dart';
 export 'package:my_beta_programm/screens/main_page.dart';
 export 'package:my_beta_programm/core/components/decoration.dart';
 export 'package:my_beta_programm/core/widgets/container.dart';
+export 'package:my_beta_programm/core/widgets/appBar.dart';
+
 
 
 

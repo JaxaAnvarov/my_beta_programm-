@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
 
-
 class AwesomeContainer extends StatelessWidget {
   double? width;
   double? height;
@@ -18,8 +17,8 @@ class AwesomeContainer extends StatelessWidget {
       height: height,
       width: width,
       decoration: CDecoration().boxDecoration(
-        Colors.indigo,
-        getProportionateScreenWidth(
+        imageUrl: 'assets/images/ima.png',
+        radius : getProportionateScreenWidth(
           20.0,
         ),
       ),
