@@ -10,7 +10,7 @@ SvgPicture home1 = SvgPicture.asset(
 
 // * Aktiv Search Iconi Uchun
 SvgPicture search1 = SvgPicture.asset(
-  'assets/icons/search.svg',
+  'assets/icons/search1.svg',
   width: getProportionateScreenWidth(20.0),
   height: getProportionateScreenHeight(20.0),
 );
@@ -24,7 +24,7 @@ SvgPicture home2 = SvgPicture.asset(
 
 // ! Passiv Search Iconi Uchun
 SvgPicture search2 = SvgPicture.asset(
-  'assets/icons/search.svg',
+  'assets/icons/search2.svg',
   width: getProportionateScreenWidth(20.0),
   height: getProportionateScreenHeight(20.0),
 );
@@ -44,14 +44,14 @@ SvgPicture ticked2 = SvgPicture.asset(
 );
 
 // ! Passiv Profil iconi uchun
-SvgPicture person1 = SvgPicture.asset(
+SvgPicture person2 = SvgPicture.asset(
   'assets/icons/person.svg',
   height: getProportionateScreenHeight(20.0),
   width: getProportionateScreenWidth(20.0),
 );
 
 // * Passiv Profil iconi uchun
-SvgPicture person2 = SvgPicture.asset(
+SvgPicture person1 = SvgPicture.asset(
   'assets/icons/person.svg',
   color: kPrimaryRedColor,
   height: getProportionateScreenHeight(20.0),
