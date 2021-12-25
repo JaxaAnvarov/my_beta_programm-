@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
-import 'package:my_beta_programm/core/widgets/sliver_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -9,7 +8,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      backgroundColor: ProjectColors().kPrimaryBgColor,
       body: CustomScrollView(
+        physics: const BouncingScrollPhysics(),
         slivers: [
           MySliverAppBar(
             title: 'Home',

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_beta_programm/core/components/constants_text.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
-import 'package:my_beta_programm/core/constants/paddigs.dart';
 
 class MySliverList extends StatelessWidget {
   const MySliverList({Key? key}) : super(key: key);
@@ -24,10 +22,36 @@ class MySliverList extends StatelessWidget {
                   color: ProjectColors().kPrimaryTextColor,
                   size: getProportionateScreenWidth(28.0),
                 ),
-                Text("Hayr"),
+                ConstantsContainer(
+                  height: getProportionateScreenWidth(32.0),
+                  width: getProportionateScreenWidth(32.0),
+                  icon: filters,
+                )
               ],
             ),
-          )
+          ),
+          SizedBox(
+            height: getProportionateScreenHeight(260.0),
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 6,
+              itemBuilder: (
+                BuildContext _,
+                int __,
+              ) {
+                return Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: kPrimaryVerticalPadding,
+                    vertical: kPrimaryVPadding,
+                  ),
+                  child: AwesomeContainer(
+                    height: getProportionateScreenHeight(256.0),
+                    width: getProportionateScreenWidth(327.0),
+                  ),
+                );
+              },
+            ),
+          ),
         ],
       ),
     );

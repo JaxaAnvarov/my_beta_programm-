@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
 
 // * Aktiv Home Iconi Uchun
@@ -64,7 +63,7 @@ SvgPicture person1 = SvgPicture.asset(
 // Button icons
 const String calendar = 'assets/icons/Buttons/Calendar.svg';
 const String erase = 'assets/icons/Buttons/Erase.svg';
-const String filters = 'assets/icons/Buttons/filter.svg';
+const String filters = 'assets/icons/Buttons/Filters.svg';
 const String location = 'assets/icons/Buttons/Location.svg';
 const String notify = 'assets/icons/Buttons/Notify.svg';
 const String right = 'assets/icons/Buttons/Right.svg';
