@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_beta_programm/core/constants/container/const_containers.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
+import 'package:my_beta_programm/core/model/mock/list_test_mock.dart';
 
 class MySliverList extends StatelessWidget {
   const MySliverList({Key? key}) : super(key: key);
@@ -78,6 +79,54 @@ class MySliverList extends StatelessWidget {
           ),
           ConstContainers().constContainer(
             text: 'Discover',
+          ),
+          SizedBox(
+            height: getProportionateScreenHeight(60.0),
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 6,
+              itemBuilder: (
+                BuildContext _,
+                int __,
+              ) {
+                return Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: kPrimaryHorizontalPadding,
+                  ),
+                  child: Container(
+                    height: getProportionateScreenHeight(56.0),
+                    width: getProportionateScreenWidth(145.0),
+                    decoration: BoxDecoration(
+                      color: ProjectColors().kPrimaryWhiteColor,
+                      borderRadius: BorderRadius.circular(
+                        getProportionateScreenWidth(30.0),
+                      ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: kPrimaryHorizontalPadding,
+                        vertical: kPrimaryVerticalPadding,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          ConstantsContainer(
+                            height: getProportionateScreenWidth(40.0),
+                            width: getProportionateScreenWidth(40.0),
+                            icon: mapPin,
+                          ),
+                          ConstantsText(
+                            size: getProportionateScreenWidth(16.0),
+                            color: ConstColors.colors[__],
+                            text: Mock.text_mock[__].toString(),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
           ),
         ],
       ),

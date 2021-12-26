@@ -8,3 +8,14 @@ class ProjectColors {
   Color kPrimaryTextColor = const Color(0xff373842);
   Color kPrimarySubtitlesColor = const Color(0xffb2b9d0);
 }
+
+class ConstColors {
+  static const List<Color> colors = [
+    Color(0xFFff0049),
+    Color(0xff6079ff),
+    Color(0xffef9a55),
+    Color(0xFFff0049),
+    Color(0xff6079ff),
+    Color(0xffef9a55),
+  ];
+}
