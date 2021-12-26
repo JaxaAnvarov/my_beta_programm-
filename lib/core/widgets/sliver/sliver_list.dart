@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_beta_programm/core/constants/container/const_containers.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
 
 class MySliverList extends StatelessWidget {
@@ -17,10 +18,8 @@ class MySliverList extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                ConstantsText(
-                  text: "For you",
-                  color: ProjectColors().kPrimaryTextColor,
-                  size: getProportionateScreenWidth(28.0),
+                ConstContainers().constContainer(
+                  text: 'For you',
                 ),
                 ConstantsContainer(
                   height: getProportionateScreenWidth(32.0),
@@ -52,16 +51,8 @@ class MySliverList extends StatelessWidget {
               },
             ),
           ),
-          Container(
-            margin: EdgeInsets.symmetric(
-              horizontal: kPrimaryHorizontalPadding,
-              vertical: kPrimaryVPadding,
-            ),
-            child: ConstantsText(
-              text: 'Collection',
-              color: ProjectColors().kPrimaryTextColor,
-              size: getProportionateScreenWidth(28.0),
-            ),
+          ConstContainers().constContainer(
+            text: 'Collection',
           ),
           SizedBox(
             height: getProportionateScreenHeight(180.0),
@@ -85,16 +76,8 @@ class MySliverList extends StatelessWidget {
               },
             ),
           ),
-          Container(
-            margin: EdgeInsets.symmetric(
-              horizontal: kPrimaryHorizontalPadding,
-              vertical: kPrimaryVPadding,
-            ),
-            child: ConstantsText(
-              text: 'Discover',
-              color: ProjectColors().kPrimaryTextColor,
-              size: getProportionateScreenWidth(28.0),
-            ),
+          ConstContainers().constContainer(
+            text: 'Discover',
           ),
         ],
       ),

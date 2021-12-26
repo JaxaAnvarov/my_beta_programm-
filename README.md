@@ -1,6 +1,6 @@
 # my_beta_programm
 
-A new Flutter project.
+Bu loyihammining Flutter va Backend qismlarini toliq o'zim qilganman !
 
 ## Getting Started
 

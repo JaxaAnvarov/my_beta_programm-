@@ -1,5 +1,5 @@
 export 'package:my_beta_programm/core/constants/size_config.dart';
-export 'package:my_beta_programm/core/constants/colors.dart';
+export 'package:my_beta_programm/core/constants/color/colors.dart';
 export 'package:flutter_svg/svg.dart';
 export 'package:my_beta_programm/screens/home/home_page.dart';
 export 'package:my_beta_programm/screens/person/person_page.dart';
