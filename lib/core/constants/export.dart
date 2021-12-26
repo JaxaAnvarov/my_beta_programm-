@@ -11,16 +11,17 @@ export 'package:provider/provider.dart';
 export 'package:my_beta_programm/core/widgets/bottom_nav_bar.dart';
 export 'package:my_beta_programm/screens/main_page.dart';
 export 'package:my_beta_programm/core/components/decoration.dart';
-export 'package:my_beta_programm/core/widgets/container/container.dart';
 export 'package:my_beta_programm/core/widgets/sliver/sliver_appBar.dart';
-export 'package:my_beta_programm/core/widgets/container/constants_container.dart';
-export 'package:my_beta_programm/core/components/constants_text.dart';
+export 'package:my_beta_programm/core/widgets/container/button_page.dart';
+export 'package:my_beta_programm/core/components/text.dart';
 export 'package:my_beta_programm/core/constants/paddigs.dart';
 export 'package:my_beta_programm/core/widgets/sliver/sliver_list.dart';
 export 'package:my_beta_programm/core/model/mock/list_test_mock.dart';
 export 'package:my_beta_programm/core/constants/container/const_containers.dart';
 export 'package:my_beta_programm/core/constants/images/const_images.dart';
-export 'package:my_beta_programm/core/widgets/container/container.dart';
+export 'package:my_beta_programm/core/components/card/medium_card_page.dart';
+export 'package:my_beta_programm/core/constants/helper/information_helper.dart';
+export 'package:my_beta_programm/core/widgets/builder/list_builder.dart';
 
 
 

@@ -1,6 +1,13 @@
-import 'package:my_beta_programm/core/constants/size_config.dart';
+import 'package:flutter/material.dart';
+import 'package:my_beta_programm/core/constants/export.dart';
 
-double kPrimaryHorizontalPadding = getProportionateScreenWidth(16.0);
-double kPrimaryVerticalPadding = getProportionateScreenHeight(15.0);
-double kPrimaryVPadding = getProportionateScreenHeight(24.0);
-double kPadding = getProportionateScreenWidth(12.0);
+class DefaultPaddigs {
+  static symmetric({
+    double horizontal = 0,
+    double vertical = 0,
+  }) =>
+      EdgeInsets.symmetric(
+        horizontal: getProportionateScreenWidth(horizontal),
+        vertical: getProportionateScreenHeight(vertical),
+      );
+}

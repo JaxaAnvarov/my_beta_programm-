@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_beta_programm/core/components/card/small_card_page.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
-import 'package:my_beta_programm/core/constants/helper/information_helper.dart';
-import 'package:my_beta_programm/core/widgets/builder/list_builder.dart';
 
 class MySliverList extends StatelessWidget {
   const MySliverList({Key? key}) : super(key: key);
@@ -12,10 +11,9 @@ class MySliverList extends StatelessWidget {
       delegate: SliverChildListDelegate(
         [
           Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: kPadding,
-              vertical: kPrimaryVerticalPadding,
-            ),
+            padding: DefaultPaddigs.symmetric(
+                horizontal: getProportionateScreenWidth(16.0),
+                vertical: getProportionateScreenWidth(10.0)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -40,10 +38,9 @@ class MySliverList extends StatelessWidget {
           ),
           thirdListMethod(),
           Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: kPadding,
-              vertical: kPrimaryVerticalPadding,
-            ),
+            padding: DefaultPaddigs.symmetric(
+                horizontal: getProportionateScreenWidth(16.0),
+                vertical: getProportionateScreenWidth(10.0)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -66,33 +63,6 @@ class MySliverList extends StatelessWidget {
   thirdListMethod() {
     return SizedBox(
       height: getProportionateScreenHeight(60.0),
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: 6,
-        itemBuilder: (
-          BuildContext _,
-          int __,
-        ) {
-          return Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: kPrimaryHorizontalPadding,
-            ),
-            child: AwesomeContainer(
-              height: getProportionateScreenHeight(256.0),
-              width: getProportionateScreenWidth(327.0),
-              image: Images.bgImage,
-              radius: getProportionateScreenWidth(20.0),
-              child: const Information(),
-            ),
-          );
-        },
-      ),
-    );
-  }
-
-  secondListMethod() {
-    return SizedBox(
-      height: getProportionateScreenHeight(180.0),
       child: ListViewBuilder(
         child: Container(
           height: getProportionateScreenHeight(56.0),
@@ -104,10 +74,9 @@ class MySliverList extends StatelessWidget {
             ),
           ),
           child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: kPrimaryHorizontalPadding,
-              vertical: kPrimaryVerticalPadding,
-            ),
+            padding: DefaultPaddigs.symmetric(
+                horizontal: getProportionateScreenWidth(16.0),
+                vertical: getProportionateScreenWidth(10.0)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -129,17 +98,20 @@ class MySliverList extends StatelessWidget {
     );
   }
 
+  secondListMethod() {
+    return SizedBox(
+      height: getProportionateScreenHeight(180.0),
+      child: ListViewBuilder(
+        child: const SmallCard(),
+      ),
+    );
+  }
+
   firstListMethod() {
     return SizedBox(
       height: getProportionateScreenHeight(280.0),
       child: ListViewBuilder(
-        child: AwesomeContainer(
-          height: getProportionateScreenHeight(256.0),
-          width: getProportionateScreenWidth(327.0),
-          image: Images.bgImage,
-          radius: getProportionateScreenWidth(20.0),
-          child: const Information(),
-        ),
+        child: MediumCard(),
       ),
     );
   }
