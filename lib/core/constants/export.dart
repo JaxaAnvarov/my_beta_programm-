@@ -20,6 +20,8 @@ export 'package:my_beta_programm/core/widgets/sliver/sliver_list.dart';
 export 'package:my_beta_programm/core/model/mock/list_test_mock.dart';
 export 'package:my_beta_programm/core/constants/container/const_containers.dart';
 export 'package:my_beta_programm/core/constants/images/const_images.dart';
+export 'package:my_beta_programm/core/widgets/container/container.dart';
+
 
 
 
