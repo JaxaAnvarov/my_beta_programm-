@@ -4,8 +4,10 @@ class CDecoration extends Object {
   BoxDecoration boxDecoration({
     double? radius,
     String? imageUrl,
+    Color? color,
   }) {
     return BoxDecoration(
+      color: color,
       image: DecorationImage(
         image: AssetImage(
           imageUrl!,

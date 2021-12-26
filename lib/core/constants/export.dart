@@ -17,6 +17,11 @@ export 'package:my_beta_programm/core/widgets/container/constants_container.dart
 export 'package:my_beta_programm/core/components/constants_text.dart';
 export 'package:my_beta_programm/core/constants/paddigs.dart';
 export 'package:my_beta_programm/core/widgets/sliver/sliver_list.dart';
+export 'package:my_beta_programm/core/model/mock/list_test_mock.dart';
+export 'package:my_beta_programm/core/constants/container/const_containers.dart';
+export 'package:my_beta_programm/core/constants/images/const_images.dart';
+
+
 
 
 

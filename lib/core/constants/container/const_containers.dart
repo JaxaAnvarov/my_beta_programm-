@@ -5,7 +5,7 @@ class ConstContainers extends Object {
   Container constContainer({String? text}) {
     return Container(
       margin: EdgeInsets.symmetric(
-        horizontal: kPrimaryHorizontalPadding,
+        horizontal: kPadding,
         vertical: kPrimaryVPadding,
       ),
       child: ConstantsText(

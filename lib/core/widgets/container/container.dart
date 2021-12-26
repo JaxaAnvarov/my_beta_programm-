@@ -5,10 +5,18 @@ import 'package:my_beta_programm/core/constants/helper/information_helper.dart';
 class AwesomeContainer extends StatelessWidget {
   double? width;
   double? height;
+  String? image;
+  double? radius;
+  Color? color;
+  Widget? child;
   AwesomeContainer({
     Key? key,
     required this.height,
     required this.width,
+    this.image,
+    this.radius,
+    this.color,
+    this.child,
   }) : super(key: key);
 
   @override
@@ -17,12 +25,11 @@ class AwesomeContainer extends StatelessWidget {
     return Container(
       height: height,
       width: width,
-      child: const Information(),
+      child: child,
       decoration: CDecoration().boxDecoration(
-        imageUrl: 'assets/images/ima.png',
-        radius: getProportionateScreenWidth(
-          20.0,
-        ),
+        imageUrl: image,
+        radius: radius,
+        color: color
       ),
     );
   }
