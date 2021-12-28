@@ -9,12 +9,28 @@ class TickedPage extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       body: Center(
-        child: Text(
-          "Ticked Page",
-          style: TextStyle(
-            color: ProjectColors().kPrimaryBlackColor,
-            fontSize: getProportionateScreenWidth(30.0),
-          ),
+        child: Column(
+          children: [
+            Container(
+              height: getProportionateScreenHeight(552.0),
+              width: double.infinity,
+              decoration: CDecoration().boxDecoration(
+                  radius: getProportionateScreenWidth(0.0),
+                  imageUrl: Images.bgFon,
+                  color: ProjectColors().kPrimaryWhiteColor),
+            ),
+            ConstantsText(
+              color: ProjectColors().kPrimaryTextColor,
+              text: 'No tickets bought',
+              size: getProportionateScreenWidth(28.0),
+            ),
+            ConstantsText(
+              color: ProjectColors().kPrimatySecondaryTextColor,
+              size: getProportionateScreenWidth(15.0),
+              text:
+                  "It appears you haven't bought any tickets yet.\nMaybe try searching these?",
+            ),
+          ],
         ),
       ),
     );

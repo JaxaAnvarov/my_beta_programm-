@@ -15,6 +15,7 @@ class ConstantsText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
+      textAlign: TextAlign.center,
       style: TextStyle(
         color: color,
         fontSize: size,

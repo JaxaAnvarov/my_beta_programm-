@@ -22,6 +22,8 @@ export 'package:my_beta_programm/core/constants/images/const_images.dart';
 export 'package:my_beta_programm/core/components/card/medium_card_page.dart';
 export 'package:my_beta_programm/core/constants/helper/information_helper.dart';
 export 'package:my_beta_programm/core/widgets/builder/list_builder.dart';
+export 'package:my_beta_programm/core/components/card/small_card_page.dart';
+
 
 
 

@@ -7,6 +7,7 @@ class ProjectColors {
   Color kPrimaryBgColor = const Color(0xFFF2F2F2);
   Color kPrimaryTextColor = const Color(0xff373842);
   Color kPrimarySubtitlesColor = const Color(0xffb2b9d0);
+  Color kPrimatySecondaryTextColor = const Color(0xffB3B8B8);
 }
 
 class ConstColors {

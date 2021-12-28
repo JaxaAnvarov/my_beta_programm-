@@ -9,12 +9,10 @@ class SearchPage extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       body: Center(
-        child: Text(
-          "Search Page",
-          style: TextStyle(
-            color: ProjectColors().kPrimaryBlackColor,
-            fontSize: getProportionateScreenWidth(30.0),
-          ),
+        child: ConstantsText(
+          size: getProportionateScreenWidth(30.0),
+          text: 'Seach Page',
+          color: ProjectColors().kPrimaryBlackColor,
         ),
       ),
     );
