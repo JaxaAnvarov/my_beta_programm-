@@ -21,8 +21,6 @@ class ConstantsContainer extends StatelessWidget {
       child: SvgPicture.asset(
         icon!,
         color: ProjectColors().kPrimaryRedColor,
-        height: height,
-        width: width,
       ),
       decoration: const BoxDecoration(
         color: Colors.white,

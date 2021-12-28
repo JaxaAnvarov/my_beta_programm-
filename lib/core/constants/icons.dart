@@ -58,7 +58,10 @@ SvgPicture person1 = SvgPicture.asset(
   width: getProportionateScreenWidth(20.0),
 );
 
-
+SvgPicture filter = SvgPicture.asset(
+  'assets/icons/Buttons/Filters.svg',
+  color: ProjectColors().kPrimaryRedColor,
+);
 
 // Button icons
 const String calendar = 'assets/icons/Buttons/Calendar.svg';

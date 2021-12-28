@@ -11,9 +11,7 @@ class MySliverList extends StatelessWidget {
       delegate: SliverChildListDelegate(
         [
           Padding(
-            padding: DefaultPaddigs.symmetric(
-                horizontal: getProportionateScreenWidth(16.0),
-                vertical: getProportionateScreenWidth(10.0)),
+            padding: EdgeInsets.only(right: getProportionateScreenWidth(15.0)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -38,9 +36,9 @@ class MySliverList extends StatelessWidget {
           ),
           thirdListMethod(),
           Padding(
-            padding: DefaultPaddigs.symmetric(
-                horizontal: getProportionateScreenWidth(16.0),
-                vertical: getProportionateScreenWidth(10.0)),
+            padding: EdgeInsets.only(
+              right: getProportionateScreenWidth(15.0),
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -51,7 +49,7 @@ class MySliverList extends StatelessWidget {
                   height: getProportionateScreenWidth(32.0),
                   width: getProportionateScreenWidth(32.0),
                   icon: right,
-                )
+                ),
               ],
             ),
           ),
@@ -63,37 +61,50 @@ class MySliverList extends StatelessWidget {
   thirdListMethod() {
     return SizedBox(
       height: getProportionateScreenHeight(60.0),
-      child: ListViewBuilder(
-        child: Container(
-          height: getProportionateScreenHeight(56.0),
-          width: getProportionateScreenWidth(145.0),
-          decoration: BoxDecoration(
-            color: ProjectColors().kPrimaryWhiteColor,
-            borderRadius: BorderRadius.circular(
-              getProportionateScreenWidth(30.0),
-            ),
-          ),
-          child: Padding(
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: 6,
+        itemBuilder: (
+          BuildContext _,
+          int __,
+        ) {
+          return Padding(
             padding: DefaultPaddigs.symmetric(
-                horizontal: getProportionateScreenWidth(16.0),
-                vertical: getProportionateScreenWidth(10.0)),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ConstantsContainer(
-                  height: getProportionateScreenWidth(40.0),
-                  width: getProportionateScreenWidth(40.0),
-                  icon: mapPin,
-                ),
-                ConstantsText(
-                  size: getProportionateScreenWidth(16.0),
-                  color: ConstColors.colors[0],
-                  text: Mock.text_mock[0].toString(),
-                ),
-              ],
+              horizontal: getProportionateScreenWidth(16.0),
+              vertical: getProportionateScreenWidth(5.0),
             ),
-          ),
-        ),
+            child: Container(
+              height: getProportionateScreenHeight(56.0),
+              width: getProportionateScreenWidth(145.0),
+              decoration: BoxDecoration(
+                color: ProjectColors().kPrimaryWhiteColor,
+                borderRadius: BorderRadius.circular(
+                  getProportionateScreenWidth(30.0),
+                ),
+              ),
+              child: Padding(
+                padding: DefaultPaddigs.symmetric(
+                  horizontal: getProportionateScreenWidth(5.0),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ConstantsContainer(
+                      height: getProportionateScreenWidth(40.0),
+                      width: getProportionateScreenWidth(40.0),
+                      icon: mapPin,
+                    ),
+                    ConstantsText(
+                      size: getProportionateScreenWidth(16.0),
+                      color: ConstColors.colors[__],
+                      text: Mock.text_mock[__].toString(),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
       ),
     );
   }
@@ -116,3 +127,6 @@ class MySliverList extends StatelessWidget {
     );
   }
 }
+
+// ! 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 
+// token
