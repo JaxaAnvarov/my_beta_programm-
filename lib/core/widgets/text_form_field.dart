@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
-import 'package:my_beta_programm/provider/text_form_field_provider.dart';
 
 class MyTextFormField extends StatelessWidget {
-  const MyTextFormField({Key? key}) : super(key: key);
+  MyTextFormField({
+    Key? key,
+    this.controller,
+  }) : super(key: key);
+  TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +19,7 @@ class MyTextFormField extends StatelessWidget {
             vertical: getProportionateScreenHeight(20.0),
           ),
           child: TextFormField(
-            controller: context.watch<TextFormFieldProvider>().searchController,
+            controller: controller,
             decoration: InputDecoration(
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(

@@ -38,6 +38,7 @@ dependencies:
   dio: ^4.0.4
   flutter_svg: ^1.0.0
   google_fonts: ^2.1.1
+  flutter_neumorphic: ^3.2.0
 
 dev_dependencies:
   flutter_test:
