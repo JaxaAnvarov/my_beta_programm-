@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_beta_programm/core/constants/export.dart';
+import 'package:my_beta_programm/core/widgets/text_form_field.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -8,11 +9,21 @@ class SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-      body: Center(
-        child: ConstantsText(
-          size: getProportionateScreenWidth(30.0),
-          text: 'Seach Page',
-          color: ProjectColors().kPrimaryBlackColor,
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: CDecoration().boxDecoration(
+          imageUrl: 'assets/images/map.png',
+          color: ProjectColors().kPrimaryWhiteColor,
+          radius: getProportionateScreenWidth(0.0),
+        ),
+        child: Column(
+          children: [
+            SizedBox(
+              height: getProportionateScreenHeight(150.0),
+              child: const MyTextFormField(),
+            )
+          ],
         ),
       ),
     );

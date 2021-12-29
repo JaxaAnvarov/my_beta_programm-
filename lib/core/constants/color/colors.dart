@@ -8,6 +8,7 @@ class ProjectColors {
   Color kPrimaryTextColor = const Color(0xff373842);
   Color kPrimarySubtitlesColor = const Color(0xffb2b9d0);
   Color kPrimatySecondaryTextColor = const Color(0xffB3B8B8);
+  Color kPrimaryHingTextColor = const Color(0xffcaccd4);
 }
 
 class ConstColors {

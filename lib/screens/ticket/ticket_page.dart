@@ -35,6 +35,7 @@ class TickedPage extends StatelessWidget {
                       text: 'Popular',
                     ),
                   ),
+                  SizedBox(height: getProportionateScreenHeight(25.0)),
                   SizedBox(
                     height: getProportionateScreenHeight(40.0),
                     child: ListView.builder(
