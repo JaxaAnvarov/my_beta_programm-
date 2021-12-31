@@ -3,7 +3,17 @@ import 'package:my_beta_programm/core/constants/export.dart';
 
 void main() {
   runApp(
-    const MyApp(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => BottomProvier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => TextFormFieldProvider(),
+        ),
+      ],
+      child: const MyApp(),
+    ),
   );
 }
 
