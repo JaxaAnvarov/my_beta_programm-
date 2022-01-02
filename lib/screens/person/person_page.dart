@@ -8,14 +8,15 @@ class PersonPage extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-      body: Center(
-        child: Text(
-          'Person Page',
-          style: TextStyle(
-            color: ProjectColors().kPrimaryBlackColor,
-            fontSize: getProportionateScreenWidth(30.0),
-          ),
+      appBar: AppBar(
+        backgroundColor: ProjectColors().kPrimaryWhiteColor,
+        elevation: 0,
+        title: ConstantsText(
+          color: ProjectColors().kPrimaryTextColor,
+          size: getProportionateScreenWidth(16.0),
+          text: 'Profile',
         ),
+        centerTitle: true,
       ),
     );
   }
