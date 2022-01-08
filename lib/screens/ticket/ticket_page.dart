@@ -60,7 +60,7 @@ class TickedPage extends StatelessWidget {
                                   .kPrimaryWhiteColor
                                   .withOpacity(0.3),
                               radius: getProportionateScreenWidth(20.0),
-                              imageUrl: '',
+                              imageUrl: 'https://source.unsplash.com/random',
                             ),
                             child: ConstantsText(
                               text: Defaults.text[__].toString(),

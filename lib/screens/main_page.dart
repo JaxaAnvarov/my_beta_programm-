@@ -16,7 +16,6 @@ class MainPage extends StatelessWidget {
           ),
         ),
       ),
-      // builder: (context) => BottomProvier(),
     );
   }
 }

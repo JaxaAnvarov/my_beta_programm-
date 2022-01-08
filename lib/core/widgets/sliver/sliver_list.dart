@@ -27,12 +27,20 @@ class MySliverList extends StatelessWidget {
             ),
           ),
           firstListMethod(),
-          ConstContainers().constContainer(
-            text: 'Collection',
+          Container(
+            width: double.infinity,
+            alignment: Alignment.centerLeft,
+            child: ConstContainers().constContainer(
+              text: 'Collection',
+            ),
           ),
           secondListMethod(),
-          ConstContainers().constContainer(
-            text: 'Discover',
+          Container(
+            width: double.infinity,
+            alignment: Alignment.centerLeft,
+            child: ConstContainers().constContainer(
+              text: 'Discover',
+            ),
           ),
           thirdListMethod(),
           Padding(

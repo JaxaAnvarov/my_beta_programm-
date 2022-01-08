@@ -21,6 +21,8 @@ class MyTextFormField extends StatelessWidget {
           child: TextFormField(
             controller: controller,
             decoration: InputDecoration(
+              filled: true,
+              fillColor: ProjectColors().kPrimaryWhiteColor,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(
                   getProportionateScreenWidth(12.0),
@@ -41,7 +43,6 @@ class MyTextFormField extends StatelessWidget {
           ),
         ),
       ),
-      // builder: (context) => BottomProvier(),
     );
   }
 }
